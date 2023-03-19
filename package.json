@@ -1,0 +1,38 @@
+{
+  "name": "skript-helper",
+  "version": "1.0.0",
+  "description": "Skript helper bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpschorr/skript-helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpschorr/skript-helper/issues"
+  },
+  "homepage": "https://github.com/mpschorr/skript-helper#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@sapphire/framework": "^4.2.2",
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3"
+  }
+}
